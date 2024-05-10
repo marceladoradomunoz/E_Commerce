@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+* {
+    margin: 0pt;
+    padding: 0pt;
+}
+
+body {
+    background: url(../assets/img/fondo-pared-blanca.jpg);
+}
+
+.grid {
+    border: 1px solid gray;
+    display: grid;
+    grid-template-areas: 
+    'navbar navbar'
+    'menu products'
+    'footer footer';
+    grid-template-columns: 1fr 6fr;
+}
+
+
+.navbar {
+    grid-area: navbar;
+    background-color: rgba(252, 171, 246, 0.5);
+    height: 12vh;
+    font-family: "Nanum Myeongjo", sans-serif !important;
+}
+
+.text_navbar {
+    display: grid;
+    align-items: center;
+    font-family: "Nanum Myeongjo", sans-serif;
+    font-size: 6vh;
+    grid-area: nav;
+    color: #23282b
+}
+
+.menu {
+    grid-area: menu;
+    background-color: rgb(0, 0, 0, .6);
+    height: 85vh;
+    font-family: "Nanum Myeongjo", sans-serif;
+    align-items: start;
+    height: 879px !important;
+}
+
+.grid_item {
+    display: flex;
+
+}
+
+.list_item {
+    text-align: start;
+
+}
+
+.list {
+    list-style: none;
+}
+
+.item_1 {
+    color: #ffffff;
+    font-size: 19px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.item {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.products {
+    grid-area: products;
+    background-color: rgb(242, 244, 233);
+}
+
+.card_title {
+    color: #1c1c1c
+}
+
+.card-img-top {
+    width: 250px; 
+    height: 270px; 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    position: relative;
+    -ms-transform: translate(-50%, -1%);
+    transform: translate(-50%, -1%);
+}
+
+.price {
+    text-align: end;
+}
+
+.btn {
+    background-color: #ff8adc; 
+    font-size: 12pt; 
+    width: 110pt; 
+    height: 27pt;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgba(252, 171, 246, 0.5); position: fixed;
+    height: 5vh;
+    position: relative;
+
+}
+
+.text_footer {
+    color: #292d30;
+    font-size: 1.5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
